@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Profesional - Kartu Nama Digital Interaktif">
+    <meta name="keywords" content="portfolio, developer, designer, professional, creative, digital business card">
+    <title>Portfolio | Langen Dimas Pramudya</title>
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Custom -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Tombol Switch Mode -->
+    <button id="theme-toggle" aria-label="Toggle dark/light mode">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </button>
+
+    <!-- Container Utama -->
+    <div class="business-card-container">
+        <div class="business-card">
+            <!-- Panel Kiri (Informasi Personal) -->
+            <div class="personal-info">
+                <div class="profile-section">
+                    <!-- Foto Profil -->
+                    <img src="images/DimasProfile.jpg" alt="Foto Profil" class="profile-photo">
+                    
+                    <!-- Nama dan Jabatan -->
+                    <div class="name-title">
+                        <h1>Langen Dimas Pramudya</h1>
+                        <h2>Siswa SMK Negeri 40 Jakarta</h2>
+                    </div>
+                </div>
+
+                <!-- Informasi Kontak -->
+                <div class="contact-section">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>27 Maret 2008</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Jakarta, Indonesia</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>pramudyadimas510@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+62 856 7616 261</span>
+                        </div>
+                    </div>
+
+                    <!-- Media Sosial -->
+                    <div class="social-links">
+                        <a href="https://github.com/LangenDimasP" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/inidimasp_?igsh=MWFsaWw2ZnhocDY2cw==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+
+                    <!-- QR Code dihilangkan -->
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <button class="action-btn" onclick="window.open('https://wa.me/628567616261', '_blank')">
+                        <i class="fas fa-phone"></i> Kontak Saya
+                    </button>
+                    <button id="contact-me" class="action-btn" onclick="window.location.href='mailto:pramudyadimas510@gmail.com?subject=Subjek Email&body=Isi Email'">
+                        <i class="fas fa-envelope"></i> Email Saya
+                    </button>
+                </div>
+            </div>
+
+            <!-- Panel Kanan (Informasi Profesional) -->
+            <div class="professional-info">
+                <!-- Ringkasan Singkat -->
+                <section class="info-section" id="about">
+                    <h2 class="section-title">Tentang Saya</h2>
+                    <p class="summary">
+                        Saya adalah seorang pengembang web yang berpengalaman dalam menciptakan dan mengelola situs web. Saya mahir dalam pengembangan front-end dan back-end, menggunakan berbagai alat dan teknologi untuk membangun aplikasi web yang fungsional dan menarik secara visual. Dengan perhatian terhadap detail dan hasrat dalam pemrograman, saya berdedikasi untuk memberikan solusi web berkualitas tinggi.
+                    </p>
+                </section>
+
+                <!-- Skills -->
+                <section class="info-section" id="skills">
+                    <h2 class="section-title">Keahlian</h2>
+                    
+                    <div class="skills-container">
+                        <h3>Technical Skills</h3>
+                        <div class="skill-bars">
+                            <div class="skill-item">
+                                <span class="skill-name">HTML/CSS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%;" data-percent="85%">
+                                        <span class="percent">85%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">PHP</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%;" data-percent="90%">
+                                        <span class="percent">90%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">MySQL</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%;" data-percent="75%">
+                                        <span class="percent">75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%;" data-percent="80%">
+                                        <span class="percent">80%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>Soft Skills</h3>
+                        <div class="tag-cloud">
+                            <span class="tag">Problem Solving</span>
+                            <span class="tag">Team Leadership</span>
+                            <span class="tag">Project Management</span>
+                            <span class="tag">Communication</span>
+                            <span class="tag">Time Management</span>
+                            <span class="tag">Adaptability</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Pengalaman -->
+                <section class="info-section" id="experience">
+                    <h2 class="section-title">Pelatihan</h2>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>Pengenalan Ke Logika Pemrograman</h3>
+                                <h4>Dicoding | Oct 2023</h4>
+                                <p>Mempelajari bagaimana menyusun algoritma yang efisien, serta memahami struktur kontrol seperti perulangan, percabangan, dan fungsi, yang menjadi dasar untuk pengembangan aplikasi perangkat lunak.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>Attending the Short Course on Introduction to Cyber Security and Soft Skill in The Digital Era</h3>
+                                <h4>Telkom | Oct 2024</h4>
+                                <p>Mempelajari ancaman dan tantangan yang ada dalam dunia cyber, serta bagaimana mengembangkan keterampilan komunikasi, kerja sama, dan manajemen waktu yang efektif di lingkungan digital.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>Peningkatan Kompetensi Peserta Didik SMK Program Keahlian Rekayasa Perangkat Lunak </h3>
+                                <h4>P4 Jakarta Timur | Feb 2025</h4>
+                                <p>Fokus pada pengembangan keterampilan teknis, pemrograman, dan penerapan teknologi terkini, peserta didik diharapkan dapat siap menghadapi tantangan industri perangkat lunak.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Proyek -->
+                <section class="info-section" id="projects">
+                    <h2 class="section-title">Proyek</h2>
+                    
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-img">
+                                <img src="images/Project1.png" alt="E-commerce Website">
+                            </div>
+                            <div class="project-info">
+                                <h3>Sistem Input Buku</h3>
+                                <p>Sistem Input Buku adalah aplikasi berbasis web yang memungkinkan pengguna untuk memasukkan data buku ke dalam sistem, seperti judul, penulis, kategori, dan jumlah stok. Sistem ini mempermudah pengelolaan koleksi buku dalam perpustakaan atau toko buku secara digital.</p>
+                                <div class="project-tags">
+                                    <span>PHP</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://youtu.be/5hV0DdAMdAA" target="_blank" class="project-link"><i class="fas fa-globe"></i> Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card">
+                            <div class="project-img">
+                                <img src="images/Project2.png" alt="Mobile App">
+                            </div>
+                            <div class="project-info">
+                                <h3>Sistem Absensi Siswa</h3>
+                                <p>Sistem Absensi Siswa adalah aplikasi web yang digunakan untuk mencatat dan mengelola kehadiran siswa dalam suatu institusi pendidikan. Guru atau petugas dapat dengan mudah mencatat absensi, serta memantau kehadiran siswa secara real-time dan menghasilkan laporan absensi.</p>
+                                <div class="project-tags">
+                                    <span>PHP</span>
+                                    <span>Javascript</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://youtu.be/Km4OnsWuEog?si=26nttiBnPUYn4gpb" target="_blank" class="project-link"><i class="fas fa-globe"></i> Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card">
+                            <div class="project-img">
+                                <img src="images/Project3.png" alt="Dashboard">
+                            </div>
+                            <div class="project-info">
+                                <h3>Top Up Store Sederhana</h3>
+                                <p>Top Up Store Sederhana adalah website dengan tampilan yang memfasilitasi proses top-up saldo akun pengguna untuk berbagai layanan atau produk digital. Website ini hanya menampilkan antarmuka pengguna, tanpa fungsionalitas backend untuk transaksi atau pengelolaan saldo.</p>
+                                <div class="project-tags">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>Javascript</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://www.instagram.com/p/DGpC6GjvWKg/?igsh=cjV2ZjR0bWxzeW54" target="_blank" class="project-link"><i class="fas fa-globe"></i> Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-img">
+                                <img src="images/Project4.png" alt="Dashboard">
+                            </div>
+                            <div class="project-info">
+                                <h3>Streaming Video</h3>
+                                <p>Website Streaming Video memungkinkan pengguna untuk menonton video secara langsung melalui internet. Pengguna dapat menikmati berbagai konten video dalam berbagai format tanpa perlu mengunduhnya terlebih dahulu, dengan tampilan yang user-friendly dan mudah diakses.</p>
+                                <div class="project-tags">
+                                    <span>PHP</span>
+                                    <span>Javascript</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://www.instagram.com/p/DHOn46Ey1cK/?igsh=MTl6cmlwdnhjb3cyNQ==" target="_blank" class="project-link"><i class="fas fa-globe"></i> Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Pendidikan -->
+                <section class="info-section" id="education">
+                    <h2 class="section-title">Pendidikan</h2>
+                    
+                    <div class="education-list">
+                        <div class="education-item">
+                            <div class="education-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="education-details">
+                                <h3>SMP NEGERI 44 JAKARTA</h3>
+                                <h4>2020 - 2023</h4>
+                                <p>Pada masa ini saya baru saja mengenal apa itu Bahasa Pemrograman dan Koding</p>
+                            </div>
+                        </div>
+                        
+                        <div class="education-item">
+                            <div class="education-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="education-details">
+                                <h3>SMKN 40 JAKARTA</h3>
+                                <h4>2023 - 2026</h4>
+                                <p>Mulai mengenal dasar dasar pemrograman, dan masih dalam tahap perkembangan</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Testimonial -->
+                <section class="info-section" id="testimonials">
+                    <h2 class="section-title">Testimonial</h2>
+                    
+                    <div class="testimonial-slider">
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <p>"Keren Banget mas, tutor dong mas"</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="images/defaultprofile.jpg" alt="Client 1" class="testimonial-avatar">
+                                <div class="author-info">
+                                    <h3>Mr. Z</h3>
+                                    <h4>Siswa SMKN 40</h4>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <p>"Cepet bener mas ngerjainnya ??!"</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="images/defaultprofile.jpg" alt="Client 2" class="testimonial-avatar">
+                                <div class="author-info">
+                                    <h3>Mr. L</h3>
+                                    <h4>Siswa SMKN 40</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; <span id="current-year"></span> | Langen Dimas Pramudya</p>
+        <p><span id="visitor-count">0</span> pengunjung telah melihat portfolio ini</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html> 
